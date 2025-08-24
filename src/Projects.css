@@ -1,0 +1,116 @@
+/* === Styles personnalisés pour la page Projets === */
+
+.projects-page .site-header {
+  height: 44px;
+  min-height: 44px;
+  padding: 0.1rem 0;
+}
+
+.projects-page {
+  background-color: #101820;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 60px 0;
+}
+
+.projects-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.projects-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #080707;
+}
+
+.projects-page p {
+  font-size: 1.2rem;
+  color: #cccccc00;
+  margin-bottom: 40px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.project-row {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.project-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.project-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #facc15;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.project-info ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.project-info ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #facc15;
+  font-size: 1.2rem;
+  top: -1px;
+}
+
+.project-status {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #aaa;
+}
+
+.project-btn {
+  background: #ffd700;
+  color: #101522;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  font-size: 1.03rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.project-btn:hover {
+  background: #101522;
+  color: #fff;
+  border-color: #101522;
+}
